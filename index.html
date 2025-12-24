@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AbhayaRide– Women Safety</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/html5-qrcode"></script>
+
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+  
+</head>
+<body>
+
+<h1>AbhayaRide</h1>
+<p>Verify Driver • Track Ride • SOS Support</p>
+
+<div id="reader"></div>
+
+<div id="driverCard" class="hidden">
+  <h2>Driver Verified</h2>
+  <p><b>Name:</b> <span id="dname"></span></p>
+  <p><b>Vehicle:</b> <span id="vehicle"></span></p>
+  <button onclick="startRide()">Start Ride</button>
+</div>
+
+<div id="ridePanel" class="hidden">
+  <h2>Ride in Progress</h2>
+  <button class="sos" onclick="sendSOS()">SOS</button>
+</div>
+<a href="tel:7815898481" class="sos-call">Call Emergency</a>
+
+<img id="driverPhoto" src="" width="150" style="display:none; border-radius:10px;">
+<p>Voice SOS Active</p>
+
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
